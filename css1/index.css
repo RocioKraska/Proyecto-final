@@ -48,7 +48,6 @@
 }
 * .info {
   animation: aparecer 4s;
-  width: 500px;
   padding-top: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
@@ -110,5 +109,37 @@
     opacity: 100%;
   }
 }
+/*responsive*/
+@media screen and (max-width:992px) {
+  * .cuerpo {
+    height: 100rem;
+    background-attachment: scroll;
+  }
+  * .cuerpo aside {
+    padding-left: 20px;
+  }
+  * .info1 {
+    height: 40rem;
+  }
+  * .info {
+    height: 300px;
+    padding-left: 10px;
+  }
 
+}
+@media screen and (max-width:762px){
+ 
+  * .info1 .frase {
+  font-size: 20px;
+}
+}
+@media screen and (max-width:408px){
+  * .info1 .frase {
+font-size: 18px;  }
+}
+
+@media screen and (max-width:353px){
+  * .info1 .frase {
+font-size: 15px;  }
+}
 /*# sourceMappingURL=index.css.map */
