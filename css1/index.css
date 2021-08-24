@@ -128,10 +128,15 @@
 
 }
 @media screen and (max-width:762px){
- 
+
   * .info1 .frase {
   font-size: 20px;
-}
+}}
+
+@media screen and (max-width:453px){
+  * .info1 {
+    height: 500px;
+  }
 }
 @media screen and (max-width:408px){
   * .info1 .frase {
