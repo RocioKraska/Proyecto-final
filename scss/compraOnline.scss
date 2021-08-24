@@ -1,0 +1,104 @@
+
+$color:#29435C; 
+$titulo: 'Abril Fatface', cursive;
+$nav: 'Zilla Slab', serif;
+$texto: 'Cuprum', sans-serif;
+*{
+
+    padding: 0px;
+    margin: 0px;
+    .cuerpo{
+    
+        background-image: url("fondoNav.jpeg");
+        background-repeat: no-repeat; 
+        background-attachment: scroll;
+        height: 18,75rem;
+        background-size: cover;
+        .navbar-brand{
+            font-family: 'Merienda', cursive;
+            font-size: 24px;
+        }
+        
+        .navbar-nav{
+            padding-left: 35px;
+            font-family:$nav;
+            font-size: 18px;
+           
+        }
+        .tituloSeccion{
+            font-family: $titulo;
+            color: white;
+            font-size: 40px;
+            padding-top: 100px;
+            padding-left: 20px;
+        }
+    }
+    .seccion{
+        font-family: $nav;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        animation: aparecer 4s;
+        .libreria{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            font-family:$texto;
+            font-size: 16px;
+        .imagen{
+            height: 80px;
+            width: 100px;
+            border-radius:  100%;
+            border: grey solid 1px;
+         
+        }
+        .nombre{
+            color:$color;
+            font-family: $nav;
+            font-weight: bolder;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .caracter{
+            font-weight: bolder;
+        }
+        ul{
+            list-style: none;
+        }}
+    }
+  /*footer*/
+  footer{
+    background-color: $color;
+    height: 250px;
+    color: white;
+    font-size: 17px;
+    .contacto{
+        padding-top: 20px;
+        padding-left: 10px;
+        font-family: $texto;
+       li{
+        list-style: none;
+       }
+    }
+    .horario{
+        font-family: $texto;
+padding-left: 10px;
+       li{
+        list-style: none;
+       }}}
+
+       @keyframes aparecer {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+}

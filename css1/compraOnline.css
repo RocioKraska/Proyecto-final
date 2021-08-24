@@ -1,0 +1,98 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /*footer*/
+}
+* .cuerpo {
+  background-image: url("fondoNav.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 18, 75rem;
+  background-size: cover;
+}
+* .cuerpo .navbar-brand {
+  font-family: "Merienda", cursive;
+  font-size: 24px;
+}
+* .cuerpo .navbar-nav {
+  padding-left: 35px;
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+}
+* .cuerpo .tituloSeccion {
+  font-family: "Abril Fatface", cursive;
+  color: white;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+* .seccion {
+  font-family: "Zilla Slab", serif;
+  font-size: 16px;
+  padding-left: 20px;
+}
+* aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  animation: aparecer 4s;
+}
+* aside .libreria {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+}
+* aside .libreria .imagen {
+  height: 80px;
+  width: 100px;
+  border-radius: 100%;
+  border: grey solid 1px;
+}
+* aside .libreria .nombre {
+  color: #29435C;
+  font-family: "Zilla Slab", serif;
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+* aside .libreria .caracter {
+  font-weight: bolder;
+}
+* aside .libreria ul {
+  list-style: none;
+}
+* footer {
+  background-color: #29435C;
+  height: 250px;
+  color: white;
+  font-size: 17px;
+}
+* footer .contacto {
+  padding-top: 20px;
+  padding-left: 10px;
+  font-family: "Cuprum", sans-serif;
+}
+* footer .contacto li {
+  list-style: none;
+}
+* footer .horario {
+  font-family: "Cuprum", sans-serif;
+  padding-left: 10px;
+}
+* footer .horario li {
+  list-style: none;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*# sourceMappingURL=compraOnline.css.map */

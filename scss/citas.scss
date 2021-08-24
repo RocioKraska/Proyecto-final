@@ -1,0 +1,100 @@
+
+$color:#29435C; 
+$titulo: 'Abril Fatface', cursive;
+$nav: 'Zilla Slab', serif;
+$texto: 'Cuprum', sans-serif;
+@mixin textalgn {
+    text-align: center;
+    font-weight: bolder; 
+}
+*{
+
+    padding: 0px;
+    margin: 0px;
+    .cuerpo{
+    
+        background-image: url("fondoNav.jpeg");
+        background-repeat: no-repeat; 
+        background-attachment: scroll;
+        height: 18,75rem;
+        background-size: cover;
+        .navbar-brand{
+            font-family: 'Merienda', cursive;
+            font-size: 24px;
+        }
+        
+        .navbar-nav{
+            padding-left: 35px;
+            font-family: $nav;
+            font-size: 18px;
+           
+        }
+        .tituloSeccion{
+            font-family: $titulo;
+            color: white;
+            font-size: 40px;
+            padding-top: 100px;
+            padding-left: 20px;
+        }
+    }
+    .seccion{
+        font-family: $nav;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    /*nav paginas secundarias*/
+    aside{
+        animation: aparecer 4s;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    .tarjeta{
+        width: 250px;
+        border: grey solid 2px;
+        font-family: $texto;
+        font-size: 16px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+    .cita{
+        text-align: center;
+    }
+    .autorCita{
+        @include textalgn;
+    }
+    .libroCita{
+        @include textalgn;
+        color:$color ;
+    }
+    }
+    }
+    /*footer*/
+    footer{
+        background-color: $color;
+        height: 250px;
+        color: white;
+        font-size: 17px;
+        .contacto{
+            padding-top: 20px;
+            padding-left: 10px;
+            font-family: $texto;
+           li{
+            list-style: none;
+           }
+        }
+        .horario{
+            font-family: $texto;
+    padding-left: 10px;
+           li{
+            list-style: none;
+           }}}
+
+           @keyframes aparecer {
+            0%{
+                opacity: 0%;
+            }
+            100%{
+                opacity: 100%;
+            }
+        }
+}
